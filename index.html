@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Faces - Birthday Party Face Painting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .fun-font {
+            font-family: 'Fredoka One', cursive;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #FFB6C1 0%, #FFA07A 100%);
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="flex items-center">
+                            <svg class="h-8 w-8 text-pink-500" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="30" fill="currentColor" />
+                                <circle cx="22" cy="24" r="5" fill="white" />
+                                <circle cx="42" cy="24" r="5" fill="white" />
+                                <path d="M20 40 C32 50 48 45 44 38" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                            <span class="ml-2 text-2xl fun-font text-gray-800">Happy <span class="text-pink-500">Faces</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-pink-500 px-3 py-2 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-500 px-3 py-2 font-medium">About Me</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-pink-500 px-3 py-2 font-medium">Pricing</a>
+                    <a href="#booking" class="bg-pink-500 text-white px-4 py-2 rounded-md font-medium hover:bg-pink-600 transition duration-300">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-pink-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-pink-500 font-medium">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-pink-500 font-medium">About Me</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-pink-500 font-medium">Pricing</a>
+                <a href="#booking" class="block px-3 py-2 bg-pink-500 text-white rounded-md font-medium hover:bg-pink-600 transition duration-300">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+                        Face Painting for <span class="fun-font">Birthday Parties</span>
+                    </h1>
+                    <p class="text-white text-lg mb-6">
+                        Hi! I'm Sarah and I love bringing smiles to children's faces with my colorful face painting at birthday parties!
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="#booking" class="bg-white text-pink-500 px-6 py-2 rounded-md font-medium hover:bg-gray-100 transition duration-300 text-center">Book Your Party</a>
+                        <a href="#pricing" class="bg-transparent border-2 border-white text-white px-6 py-2 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition duration-300 text-center">See Pricing</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <!-- Added smiley face logo to home section -->
+                    <svg class="h-64 w-64 text-pink-500" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="30" fill="currentColor" />
+                        <circle cx="22" cy="24" r="5" fill="white" />
+                        <circle cx="42" cy="24" r="5" fill="white" />
+                        <path d="M20 40 C32 50 48 45 44 38" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3 flex justify-center">
+                    <!-- Added smiley face logo to about section -->
+                    <svg class="h-48 w-48 text-pink-500" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="30" fill="currentColor" />
+                        <circle cx="22" cy="24" r="5" fill="white" />
+                        <circle cx="42" cy="24" r="5" fill="white" />
+                        <path d="M20 40 C32 50 48 45 44 38" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Hi, I'm <span class="fun-font text-pink-500">Sarah</span>!</h2>
+                    <p class="text-gray-600 mb-4">
+                        I'm an 18-year-old who discovered my passion for face painting at my little sister's 5th birthday party. What started as a fun activity has turned into a hobby I love sharing with others!
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        I'm not a professional artist, but I've practiced lots of kid-friendly designs that children absolutely love. I use only non-toxic, hypoallergenic face paints that are safe for sensitive skin and wash off easily with soap and water.
+                    </p>
+                    <div class="bg-blue-50 p-5 rounded-lg mb-5">
+                        <h3 class="font-bold text-gray-800 mb-2">Why Choose Me For Your Child's Birthday?</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">I'm affordable and focus only on birthday parties</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">I'm great with kids and have lots of patience</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">I use safe, kid-friendly face paints</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Simple designs that kids love (2-3 minutes per child)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="inline-block bg-pink-500 text-white px-6 py-2 rounded-md font-medium hover:bg-pink-600 transition duration-300">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Simple & Affordable Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    I keep my pricing straightforward so you can easily budget for your child's special day
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 justify-center">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-pink-100 transition duration-300 hover:shadow-xl md:w-1/2 lg:w-1/3">
+                    <div class="bg-gradient-to-r from-pink-400 to-pink-500 py-4 px-6 text-center">
+                        <h3 class="text-xl font-bold text-white">Birthday Party Package</h3>
+                        <div class="mt-3 text-white">
+                            <span class="text-2xl font-bold">$75</span>
+                            <span class="text-pink-100"> / 2 hours</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">2 hours of face painting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Simple designs (about 15-20 kids)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Safe, kid-friendly face paints</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Special design for the birthday child</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Travel within 10 miles included</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#booking" class="block text-center bg-pink-500 text-white px-6 py-2 rounded-md font-medium hover:bg-pink-600 transition duration-300">
+                                Book This Package
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="bg-blue-50 rounded-lg p-6 shadow-md md:w-1/2 lg:w-1/3">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Add-ons & Notes</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-600">Extra hour: $30</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-600">Travel fee: $5 per 5 miles beyond 10 miles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-600">$25 deposit required to secure booking</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 bg-white p-4 rounded-lg border border-pink-100">
+                        <h4 class="font-bold text-gray-800 mb-2">Please Note:</h4>
+                        <p class="text-gray-600 text-sm">I'm just one person, so I can only paint about 15-20 faces in 2 hours with simple designs. For larger parties, consider booking extra time!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">What Parents Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Feedback from happy parents and birthday kids
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center">
+                            <span class="text-pink-600 font-bold">JM</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Jessica M.</h4>
+                            <p class="text-gray-600 text-sm">Son's 6th Birthday</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Sarah was amazing at my son's superhero birthday party! All the kids loved their face paint designs and she was so patient with them. Definitely worth every penny!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center">
+                            <span class="text-pink-600 font-bold">AT</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Amanda T.</h4>
+                            <p class="text-gray-600 text-sm">Daughter's 5th Birthday</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Sarah did an amazing job at my daughter's princess party! The girls loved their butterfly and crown designs. She was on time, professional, and great with the kids. Will definitely book again!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Book Your Party</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Ready to add some colorful fun to your child's birthday? Let me know the details!
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                    <form id="booking-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                        </div>
+                        <div>
+                            <label for="date" class="block text-gray-700 font-medium mb-1">Party Date</label>
+                            <input type="date" id="date" name="date" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                        </div>
+                        <div>
+                            <label for="time" class="block text-gray-700 font-medium mb-1">Party Time</label>
+                            <input type="time" id="time" name="time" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                        </div>
+                        <div>
+                            <label for="location" class="block text-gray-700 font-medium mb-1">Party Location</label>
+                            <input type="text" id="location" name="location" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Address" required>
+                        </div>
+                        <div>
+                            <label for="kids" class="block text-gray-700 font-medium mb-1">Number of Kids</label>
+                            <select id="kids" name="kids" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                                <option value="">Select number of kids</option>
+                                <option value="5-10">5-10 kids</option>
+                                <option value="11-15">11-15 kids</option>
+                                <option value="16-20">16-20 kids</option>
+                                <option value="21+">21+ kids (extra hour recommended)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-1">Additional Information</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Party theme, special requests, etc."></textarea>
+                        </div>
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-pink-500 text-white px-6 py-3 rounded-md font-medium hover:bg-pink-600 transition duration-300">
+                                Submit Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Booking Information</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">I'll respond to your request within 24 hours</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">$25 deposit required to secure your booking</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Balance due on the day of the party</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-pink-500 mt-0.5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">I arrive 15 minutes early to set up</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">About Me</h3>
+                        <p class="text-gray-700 mb-4">
+                            I'm Sarah, an 18-year-old face painter who loves working with kids and making their special day even more magical! I started face painting as a hobby and now I'm excited to bring my skills to your child's birthday party.
+                        </p>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-pink-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                            </svg>
+                            <span class="text-gray-700">(555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center mt-2">
+                            <svg class="w-5 h-5 text-pink-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <span class="text-gray-700">sarah@happyfaces.example.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Booking Confirmation Modal -->
+        <div id="booking-confirmation" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+                <div class="text-center">
+                    <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Booking Request Received!</h3>
+                    <p class="text-gray-600 mb-6">Thank you for your booking request. I'll get back to you within 24 hours to confirm your party details.</p>
+                    <div id="booking-details" class="bg-blue-50 p-4 rounded-lg text-left mb-6">
+                        <!-- Booking details will be inserted here -->
+                    </div>
+                    <button id="close-modal" class="bg-pink-500 text-white px-6 py-2 rounded-md font-medium hover:bg-pink-600 transition duration-300">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-pink-500" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" fill="currentColor" />
+                            <circle cx="22" cy="24" r="5" fill="white" />
+                            <circle cx="42" cy="24" r="5" fill="white" />
+                            <path d="M20 40 C32 50 48 45 44 38" stroke="white" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                        <span class="ml-2 text-xl fun-font">Happy <span class="text-pink-400">Faces</span></span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Face Painting for Birthday Parties</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+                    <a href="#home" class="text-gray-300 hover:text-pink-400">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-pink-400">About</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-pink-400">Pricing</a>
+                    <a href="#booking" class="text-gray-300 hover:text-pink-400">Book Now</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Happy Faces. All rights reserved.</p>
+                <!-- Added Bobsy Doodles Coding Lab credit with link -->
+                <p class="mt-2">
+                    <a href="https://bobsy-doodles.github.io/coding_lab/" class="text-pink-400 hover:text-pink-300 transition duration-300" target="_blank">
+                        Made by Bobsy Doodles Coding Lab
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Booking form submission
+        const bookingForm = document.getElementById('booking-form');
+        const bookingConfirmation = document.getElementById('booking-confirmation');
+        const bookingDetails = document.getElementById('booking-details');
+        const closeModal = document.getElementById('close-modal');
+        
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const location = document.getElementById('location').value;
+            const kids = document.getElementById('kids').value;
+            const message = document.getElementById('message').value;
+            
+            // Format date
+            const formattedDate = new Date(date).toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Format time
+            const formattedTime = time;
+            
+            // Display booking details in modal
+            bookingDetails.innerHTML = `
+                <p class="font-bold mb-2">Booking Details:</p>
+                <p><span class="font-medium">Name:</span> ${name}</p>
+                <p><span class="font-medium">Date:</span> ${formattedDate}</p>
+                <p><span class="font-medium">Time:</span> ${formattedTime}</p>
+                <p><span class="font-medium">Location:</span> ${location}</p>
+                <p><span class="font-medium">Number of Kids:</span> ${kids}</p>
+            `;
+            
+            // Show confirmation modal
+            bookingConfirmation.classList.remove('hidden');
+            
+            // Reset form
+            bookingForm.reset();
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', function() {
+            bookingConfirmation.classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        bookingConfirmation.addEventListener('click', function(e) {
+            if (e.target === bookingConfirmation) {
+                bookingConfirmation.classList.add('hidden');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94ab3bf771c5a2b6',t:'MTc0OTA3OTk5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
